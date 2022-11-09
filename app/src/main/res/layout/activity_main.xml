@@ -21,7 +21,6 @@
         android:textSize="80sp" />
 
 
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,6 +30,4 @@
         android:text="@string/Start"
         android:textColor="@color/black"
         android:textSize="32sp" />
-
-
 </LinearLayout>

@@ -35,6 +35,7 @@ public class Waste {
     public int getWasteHeight(){
         return waste[0].getHeight();
     }
+
     public void resetPosition(){
         wasteX=random.nextInt(GameView.dWidth-getWasteWidth());
         wasteY=-200+random.nextInt(600)*-1;
