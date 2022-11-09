@@ -3,7 +3,7 @@ package com.team12alpha.oceanrescue;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-
+// first commit
 public class MainActivity extends AppCompatActivity {
 
     @Override
