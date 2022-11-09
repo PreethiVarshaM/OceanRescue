@@ -2,13 +2,14 @@ package com.team12alpha.oceanrescue;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.content.Context;
 
 import java.util.Random;
 
 public class Waste {
     Bitmap waste[]=new Bitmap[7];
     int wasteFrame =0;
-    int wasteX, wasteY, spikeVelocity;
+    int wasteX, wasteY, wasteVelocity;
     Random random;
 
     public Waste(Context context){
