@@ -141,6 +141,12 @@ public class GameView extends View {
             if(action==MotionEvent.ACTION_MOVE){
                 float shift=oldX-touchX;
                 float newFishX=oldfishX-shift;
+                if(newFishX <= 0)
+                    fishX = 0;
+                else if(newFishX >= dWidth - fish.getWidth())
+                    fishX = dWidth - fish.getWidth();
+                else
+                    fishX = newFishX;
             }
         }
         return true;
