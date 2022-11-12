@@ -7,7 +7,7 @@ import android.content.Context;
 import java.util.Random;
 
 public class Waste {
-    Bitmap waste[]=new Bitmap[7];
+    Bitmap[] waste=new Bitmap[7];
     int wasteFrame =0;
     int wasteX, wasteY, wasteVelocity;
     Random random;
@@ -24,7 +24,7 @@ public class Waste {
         resetPosition();
     }
 
-    public Bitmap getWaste(int spikeFrame){
+    public Bitmap getWaste(int wasteFrame){
         return waste[wasteFrame];
     }
 
