@@ -3,7 +3,6 @@ package com.team12alpha.oceanrescue;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -25,7 +24,8 @@ public class GameOver extends AppCompatActivity {
         tvHighest=findViewById(R.id.tvHighest);
         ivNewHighest=findViewById(R.id.ivNewHighest);
         int points=getIntent().getExtras().getInt("points");
-        tvPoints.setText("" + points);
+        String a=""+points;
+        tvPoints.setText(a);
         sharedPreferences = getSharedPreferences("my_pref",0);
         int highest=sharedPreferences.getInt("highest",0);
         if(points>highest)
@@ -34,9 +34,10 @@ public class GameOver extends AppCompatActivity {
             highest=points;
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putInt("highest",highest);
-            editor.commit();
+            editor.apply();
         }
-        tvHighest.setText(""+highest);
+        String b=""+highest;
+        tvHighest.setText(b);
     }
     public void restart(View view)
     {
