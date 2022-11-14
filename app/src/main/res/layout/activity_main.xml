@@ -22,11 +22,11 @@
 
 
     <Button
+        android:id="@+id/startbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#3ded97"
         android:fontFamily="@font/pumpkinstory"
-        android:onClick="startGame"
         android:text="@string/Start"
         android:textColor="@color/black"
         android:textSize="32sp" />
